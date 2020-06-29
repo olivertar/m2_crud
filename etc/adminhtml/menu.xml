@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Orangecat_Crud::crud_sample" title="Samples" translate="title" module="Orangecat_Crud" sortOrder="30" parent="Magento_Backend::content_elements" action="crud/sample" resource="Orangecat_Crud::sample"/>
+    </menu>
+</config>

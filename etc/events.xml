@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="orangecat_crud_api_data_sampleinterface_save_before">
+        <observer name="legacy_model_crud_sample_before_save" instance="Magento\Framework\EntityManager\Observer\BeforeEntitySave" />
+    </event>
+    <event name="orangecat_crud_api_data_sampleinterface_save_after">
+        <observer name="legacy_model_crud_sample_after_save" instance="Magento\Framework\EntityManager\Observer\AfterEntitySave" />
+    </event>
+    <event name="orangecat_crud_api_data_sampleinterface_delete_before">
+        <observer name="legacy_model_crud_sample_before_delete" instance="Magento\Framework\EntityManager\Observer\BeforeEntityDelete" />
+    </event>
+    <event name="orangecat_crud_api_data_sampleinterface_delete_after">
+        <observer name="legacy_model_crud_sample_after_delete" instance="Magento\Framework\EntityManager\Observer\AfterEntityDelete" />
+    </event>
+    <event name="orangecat_crud_api_data_sampleinterface_load_after">
+        <observer name="legacy_model_crud_sample_after_load" instance="Magento\Framework\EntityManager\Observer\AfterEntityLoad" />
+    </event>
+</config>

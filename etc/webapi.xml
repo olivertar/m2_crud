@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <!-- Crud Sample -->
+    <route url="/V1/crudSample/:sampleId" method="GET">
+        <service class="Orangecat\Crud\Api\SampleRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="Orangecat_Crud::sample"/>
+        </resources>
+    </route>
+    <route url="/V1/crudSample/search" method="GET">
+        <service class="Orangecat\Crud\Api\SampleRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="Orangecat_Crud::sample"/>
+        </resources>
+    </route>
+    <route url="/V1/crudSample" method="POST">
+        <service class="Orangecat\Crud\Api\SampleRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Orangecat_Crud::sample"/>
+        </resources>
+    </route>
+    <route url="/V1/crudSample/:id" method="PUT">
+        <service class="Orangecat\Crud\Api\SampleRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Orangecat_Crud::sample"/>
+        </resources>
+    </route>
+    <route url="/V1/crudSample/:sampleId" method="DELETE">
+        <service class="Orangecat\Crud\Api\SampleRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Orangecat_Crud::sample"/>
+        </resources>
+    </route>
+</routes>

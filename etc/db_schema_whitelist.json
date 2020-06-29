@@ -1,0 +1,36 @@
+{
+    "crud_sample": {
+        "column": {
+            "sample_id": true,
+            "title": true,
+            "link": true,
+            "options": true,
+            "image                                                                                                                                                                                                    ": true,
+            "content": true,
+            "order": true,
+            "creation_time": true,
+            "update_time": true,
+            "is_active": true
+        },
+        "index": {
+            "CRUD_SAMPLE_TITLE_CONTENT": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "crud_sample_store": {
+        "column": {
+            "sample_id": true,
+            "store_id": true
+        },
+        "index": {
+            "CRUD_SAMPLE_STORE_STORE_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "CRUD_SAMPLE_STORE_SAMPLE_ID_CRUD_SAMPLE_SAMPLE_ID": true,
+            "CRUD_SAMPLE_STORE_STORE_ID_STORE_STORE_ID": true
+        }
+    }
+}
