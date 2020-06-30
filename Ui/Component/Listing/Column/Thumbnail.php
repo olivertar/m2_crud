@@ -32,7 +32,7 @@ class Thumbnail extends Column
     public function prepareDataSource(array $dataSource)
     {
         if (isset($dataSource['data']['items'])) {
-            $fieldName = 'image';
+            $fieldName = $this->getData('name');
             $media_url =  $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'sampleimages/';
             foreach ($dataSource['data']['items'] as & $item) {
                 $url = '';
