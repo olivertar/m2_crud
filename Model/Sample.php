@@ -93,7 +93,7 @@ class Sample extends AbstractModel implements SampleInterface, IdentityInterface
 
     public function setId($id)
     {
-        return $this->setData(self::BLOCK_ID, $id);
+        return $this->setData(self::SAMPLE_ID, $id);
     }
 
     public function setTitle($title)
